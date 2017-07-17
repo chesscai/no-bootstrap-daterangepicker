@@ -67,10 +67,10 @@
             direction: 'ltr',
             format: moment.localeData().longDateFormat('L'),
             separator: ' - ',
-            applyLabel: 'Apply',
-            cancelLabel: 'Cancel',
+            applyLabel: '确定',
+            cancelLabel: '取消',
             weekLabel: 'W',
-            customRangeLabel: 'Custom Range',
+            customRangeLabel: '自定义选择',
             daysOfWeek: moment.weekdaysMin(),
             monthNames: moment.monthsShort(),
             firstDay: moment.localeData().firstDayOfWeek()
@@ -697,7 +697,7 @@
             var selected = side == 'left' ? this.startDate : this.endDate;
             var arrow = this.locale.direction == 'ltr' ? {left: 'chevron-left', right: 'chevron-right'} : {left: 'chevron-right', right: 'chevron-left'};
 
-            var html = '<table class="table-condensed">';
+            var html = '<table class="table-condensed" cellspacing="0" cellpadding="0" border="0">';
             html += '<thead>';
             html += '<tr>';
 
